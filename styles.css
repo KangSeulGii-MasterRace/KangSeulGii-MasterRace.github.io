@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ff9aa2, #ff6f91);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+    text-align: center;
+    background-color: #fff0f5;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.heart-container {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heart-image {
+    width: 300px;
+    height: auto;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; /* Ajusta el margen superior para acomodar el corazón */
+}
+
+.login-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ff4d6d;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 2px solid #ff4d6d;
+    border-radius: 5px;
+    width: 250px;
+    margin-bottom: 20px;
+    background-color: #ffe6e9;
+}
+
+.login-form button {
+    background-color: #ff4d6d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-form button:hover {
+    background-color: #ff1e3a;
+}
+
+/* Estilos para la página de cumpleaños */
+.birthday-container {
+    text-align: center;
+    background-color: #fff0f5;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.birthday-container h1 {
+    color: #ff4d6d;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.birthday-container p {
+    color: #ff6f91;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.photo-gallery img {
+    width: 300px;
+    height:  300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.flip-card-front {
+    background-color: #fff;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #f8a9bc;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
